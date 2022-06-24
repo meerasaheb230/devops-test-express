@@ -1,0 +1,15 @@
+<%- include("includes/head") %>
+  <body>
+    <%- include("includes/navbar.ejs") %>
+    <main class="home-main">
+      <div class="container">
+        <h1>Todos</h1>
+        <ul class="todos-list">
+          <% todos.forEach(function(todo) { %>
+            <li class="todos-item"><%= todo.id %>. <%= todo.todo %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
